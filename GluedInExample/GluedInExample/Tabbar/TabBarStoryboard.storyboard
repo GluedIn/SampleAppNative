@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0UZ-zu-pIT">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="Xbc-7O-1Hl" customClass="TabBarController" customModule="GluedInExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vbJ-DC-ASQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MN9-YN-HD9" kind="relationship" relationship="viewControllers" id="MTq-un-UId"/>
+                        <segue destination="Ct5-oM-S94" kind="relationship" relationship="viewControllers" id="gM0-uV-ABx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEE-lk-fAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-645" y="-164"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="H5L-N6-fIe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MN9-YN-HD9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="icHome" id="Vxi-SG-7r1"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XEP-Qj-9UD">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gj1-W6-1Pz" kind="relationship" relationship="rootViewController" id="YZT-Wz-puT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kuo-ar-EOn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258.77862595419845" y="-468.3098591549296"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="ix6-gP-h4E">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeStoryboard" referencedIdentifier="HomeViewController" id="gj1-W6-1Pz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="llC-eK-f1o"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oov-js-w8c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="-468"/>
+        </scene>
+        <!--Shorts-->
+        <scene sceneID="lDb-OY-MGv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ct5-oM-S94" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Shorts" image="icShorts" id="4F6-Bv-k3r"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4gZ-eT-kqz">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bpg-xz-DPp" kind="relationship" relationship="rootViewController" id="uHd-2m-oWF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3kh-Rp-zp2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="185"/>
+        </scene>
+        <!--ShortsViewController-->
+        <scene sceneID="ANE-YI-wPU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ShortsStoryboard" referencedIdentifier="ShortsViewController" id="bpg-xz-DPp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8c3-eU-tpO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WsM-cm-Z4r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="185"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icHome" width="30" height="30"/>
+        <image name="icShorts" width="25.666666030883789" height="25.666666030883789"/>
+    </resources>
+</document>
